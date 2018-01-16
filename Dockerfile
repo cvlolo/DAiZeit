@@ -9,5 +9,5 @@ COPY . /home/project/practica3
 
 EXPOSE 80
 
-RUN gunicorn -w 1 -b 0.0.0.0:80 practica3:app
+CMD gunicorn -w 1 -b 0.0.0.0:80 practica3:app
 
